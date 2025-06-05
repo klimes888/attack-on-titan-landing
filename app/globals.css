@@ -531,7 +531,7 @@ body {
 
 /* Popular Clips Styles */
 .popular-scene {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem 8rem 2rem;
   position: relative;
   z-index: 5;
   background: rgba(0, 0, 0, 0.2);
@@ -707,6 +707,32 @@ body {
   filter: blur(0.5em);
 }
 
+/** Video Section */
+
+.video-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+.video-wrap-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+
+.video-item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-section {
@@ -777,12 +803,20 @@ body {
   }
 
   .popular-scene {
-    padding: 3rem 0.85rem;
+    padding: 4rem 0.85rem;
     overflow: hidden;
   }
 
   .clips-container {
     overflow: visible;
+  }
+
+  .video-wrap {
+    background-color: #000;
+  }
+
+  .video-item {
+    object-fit: contain;
   }
 }
 

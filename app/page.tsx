@@ -6,6 +6,7 @@ import HeroSection from "@/components/hero-section";
 import PopularScene from "@/components/popular-scene";
 import "./globals.css";
 import { useIsMobile } from "@/hooks/use-mobile";
+import TrailerVedio from "@/components/trailer-video";
 
 export default function AttackOnTitanLanding() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,6 +27,7 @@ export default function AttackOnTitanLanding() {
       <Header />
       <HeroSection />
       <PopularScene />
+      <TrailerVedio />
     </div>
   );
 }

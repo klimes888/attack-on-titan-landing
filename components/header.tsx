@@ -47,7 +47,7 @@ export default function Header() {
             Scene
           </a>
           <a href="#section3" className="nav-link">
-            About
+            Video
           </a>
         </nav>
       </div>
