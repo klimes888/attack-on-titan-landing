@@ -768,16 +768,13 @@ body {
   }
 
   .character-image-wrap {
-    position: absolute;
     top: initial;
     bottom: -10%;
     left: 60%;
     transform: translate3d(-50%, 0, 0);
-    width: 22em;
+    width: 16em;
     height: auto;
     animation: fadeInOutDownUp 4s ease;
-    will-change: transform;
-    opacity: 0;
   }
 
   .img-blur {
@@ -805,10 +802,6 @@ body {
   .popular-scene {
     padding: 4rem 0.85rem;
     overflow: hidden;
-  }
-
-  .clips-container {
-    overflow: visible;
   }
 
   .video-wrap {
