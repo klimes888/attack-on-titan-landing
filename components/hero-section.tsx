@@ -3,7 +3,7 @@
 import { Fragment, useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 
-import Levi2 from "@/assets/Levi2.webp";
+import Levi from "@/assets/Levi.webp";
 import Eren from "@/assets/Eren.webp";
 import Mikasa from "@/assets/Mikasa.webp";
 import Armin from "@/assets/Armin.webp";
@@ -14,9 +14,9 @@ export default function HeroSection() {
 
   const soptlight = [
     { img: Eren, name: ["EREN", "YEAGER"] },
-    // { img: Mikasa, name: ["MIKASA", "ACKERMAN"] },
-    // { img: Armin, name: ["ARMIN", "ARLERT"] },
-    { img: Levi2, name: ["LEVI", "ACKERMAN"] },
+    { img: Mikasa, name: ["MIKASA", "ACKERMAN"] },
+    { img: Armin, name: ["ARMIN", "ARLERT"] },
+    { img: Levi, name: ["LEVI", "ACKERMAN"] },
   ];
 
   useEffect(() => {
