@@ -55,7 +55,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="hero-section">
+    <section id="section1" className="hero-section">
       <div className="hero-content">
         <div className="hero-text-container">
           {soptlight.map(({ name }, index) => {

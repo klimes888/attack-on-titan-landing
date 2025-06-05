@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "shingeki no kyojin",
+  title: "Attack on Titan",
   description: "",
   generator: "soft-landig",
 };

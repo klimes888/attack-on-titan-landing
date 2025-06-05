@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
-import PopularClips from "@/components/popular-clips";
+import PopularScene from "@/components/popular-scene";
 import "./globals.css";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -25,7 +25,7 @@ export default function AttackOnTitanLanding() {
       )}
       <Header />
       <HeroSection />
-      <PopularClips />
+      <PopularScene />
     </div>
   );
 }

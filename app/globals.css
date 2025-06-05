@@ -82,6 +82,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -177,8 +181,11 @@ body {
 
 /* Header Styles */
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
+  width: 100%;
   padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -291,7 +298,7 @@ body {
 /* Hero Section Styles */
 .hero-section {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   width: 100%;
   align-items: center;
@@ -523,7 +530,7 @@ body {
 }
 
 /* Popular Clips Styles */
-.popular-clips {
+.popular-scene {
   padding: 4rem 2rem;
   position: relative;
   z-index: 5;
@@ -593,7 +600,7 @@ body {
   flex: 1;
   overflow: hidden;
   position: relative;
-  height: 300px;
+  height: 18em;
 }
 
 .clip-card {
@@ -664,10 +671,16 @@ body {
   font-size: 0.8rem;
 }
 
+.clip-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .clip-title {
   font-size: 1.2rem;
   color: #fff;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .background-layout {
@@ -715,7 +728,7 @@ body {
     flex-direction: column;
     padding: 3em;
     height: 36em;
-    margin: 1em;
+    margin: 11em 1em 0 1em;
   }
 
   .clip-card {
@@ -762,6 +775,15 @@ body {
     /* padding: 0 1em; */
     padding-right: 0.25em;
   }
+
+  .popular-scene {
+    padding: 3rem 0.85rem;
+    overflow: hidden;
+  }
+
+  .clips-container {
+    overflow: visible;
+  }
 }
 
 @media (max-width: 480px) {
@@ -770,11 +792,12 @@ body {
   }
 
   .clips-carousel {
-    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
   }
 
   .carousel-btn {
-    display: none;
+    /* display: none; */
   }
 
   .character-image {

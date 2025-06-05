@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ChevronDown } from "lucide-react"
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export default function Header() {
-  const [isCharactersOpen, setIsCharactersOpen] = useState(false)
+  const [isCharactersOpen, setIsCharactersOpen] = useState(false);
 
   return (
     <header className="header">
@@ -13,14 +13,13 @@ export default function Header() {
           <h1 className="logo-text">Attack on Titan</h1>
           <span className="logo-subtitle">進撃の巨人</span>
         </div>
-
         <nav className="navigation">
-          <a href="#" className="nav-link active">
-            Home
+          <a href="#section1" className="nav-link active">
+            Characters
           </a>
-          <div
+          {/* <div
             className="nav-dropdown"
-            onMouseEnter={() => setIsCharactersOpen(true)}
+          onMouseEnter={() => setIsCharactersOpen(true)}
             onMouseLeave={() => setIsCharactersOpen(false)}
           >
             <button className="nav-link dropdown-trigger">
@@ -43,15 +42,15 @@ export default function Header() {
                 </a>
               </div>
             )}
-          </div>
-          <a href="#" className="nav-link">
-            Episodes
+          </div> */}
+          <a href="#section2" className="nav-link">
+            Scene
           </a>
-          <a href="#" className="nav-link">
+          <a href="#section3" className="nav-link">
             About
           </a>
         </nav>
       </div>
     </header>
-  )
+  );
 }
